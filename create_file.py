@@ -1,4 +1,9 @@
 import os
 
-name1=input('Введите название папки:')
-os.mkdir(f'name1')
+def create_folder():
+    new_folder = str(input('Введите название папки:'))
+    if not os.path.exists(new_folder):
+        os.mkdir(new_folder)
+create_folder()
+
+
